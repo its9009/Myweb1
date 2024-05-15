@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+          <a href="index.html" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+            Home
+            </a>|
+          <a href="resume.html" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Resume</a>|
+    
+            <a href="contact.html" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">contact</a>|
+    
+            <a href="project.html" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Project</a>
+        </div>
+    </nav>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto lg:flex lg:items-center">
+          <div class="lg:w-1/2 lg:px-6">
+            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+              Cakes Heaven
+            </h1>
+      
+            <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+
+"CakesHeaven" is a delightful website created using HTML, CSS, and JavaScript. It's like a virtual bakery filled with delicious cakes and treats! You can explore a wide variety of cakes, from classic flavors to unique creations.users can also customize their cake orders. Each cake comes with a description and beautiful pictures to make your mouth water. Whether you're a cake connoisseur or just love sweets, "CakesHeaven" is the perfect place to satisfy your cravings and discover new favorites.
+            </p>
+        </div>
+      
+          <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+            <!-- Component: Card Carousel -->
+            <div class="relative w-full overflow-hidden bg-white rounded shadow-xl shadow-slate-200 glide-06">
+              <!-- Slides -->
+              <div class="overflow-hidden" data-glide-el="track">
+                <ul class="image-slider relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap">
+                  <li><img src="img/1.png" class="w-full max-w-full max-h-full m-auto" /></li>
+                  <li><img src="img/2.png" class="w-full max-w-full max-h-full m-auto" /></li>
+                  <li><img src="img/3.png" class="w-full max-w-full max-h-full m-auto" /></li>
+                  <li><img src="img/4.png" class="w-full max-w-full max-h-full m-auto"/></li>
+                  <li><img src="img/5.png" class="w-full max-w-full max-h-full m-auto"/></li>
+                </ul>
+              <!-- Controls -->
+              <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2" data-glide-el="controls">
+                <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <title>prev slide</title>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                  </svg>
+                </button>
+                <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <title>next slide</title>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+     
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+<script>
+    var glide06 = new Glide('.glide-06', {
+        type: 'carousel',
+        focusAt: 'center',
+        perView: 3,
+        autoplay: 3000,
+        animationDuration: 700,
+        gap: 24,
+        classes: {
+            activeNav: '[&>*]:bg-slate-700',
+        },
+        breakpoints: {
+            1024: {
+                perView: 2
+            },
+            640: {
+                perView: 1
+            }
+        },
+    });
+
+    glide06.mount();
+</script>
+
+</body>
+</html>   
+   
+   
+   
